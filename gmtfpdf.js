@@ -1,5 +1,7 @@
-function replaceAllLinkSuffixes(str, replace) {
-  $('a[href$="' + str + '"]').attr("href", function(index, attr) { return attr.replace(str, replace); } );
+var nodes = document.querySelectorAll('a[href*="pdf+html"]');
+
+for (var i = 0; i < nodes.length; i++) {
+  var node = nodes[i];
+
+  node.href = node.href.replace(/pdf\+html($|\?)/, 'pdf$1');
 }
-replaceAllLinkSuffixes("pdf+html", "pdf");
-replaceAllLinkSuffixes("pdf+html?with-ds=yes", "pdf?with-ds=yes");
