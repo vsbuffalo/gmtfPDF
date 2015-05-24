@@ -13,6 +13,10 @@
     "matches": ["http://*/*"],
     "js": ["jquery-2.1.1.min.js", "gmtfpdf.js"],
     "run_at": "document_end"
+  },
+  { "matches": ["http://www.jstor.org/*/*"],
+    "js": ["jquery-2.1.1.min.js", "jstor.js"],
+    "run_at": "document_end"
   }
   ]
 }
