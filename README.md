@@ -12,7 +12,7 @@ This works with journals such as:
 
  - PNAS
  - Molecular Biology and Evolution
- - ASPB Journals
+ - Wiley
 
 and many others! You can install the Google Chrome Extension directly from [the
 Google Chrome Web
