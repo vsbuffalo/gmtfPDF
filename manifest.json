@@ -4,7 +4,7 @@
   "description": "Changes links to PDFs of journal articles to the PDF version (not HTML+PDF version with frames)",
 
   "manifest_version": 2,
-  "version": "1.2",
+  "version": "1.3",
   "permissions": [
     "http://*/*"
     ],
@@ -12,6 +12,11 @@
   {
     "matches": ["http://*/*"],
     "js": ["jquery-2.1.1.min.js", "gmtfpdf.js"],
+    "run_at": "document_end"
+  },
+  {
+    "matches": ["http://onlinelibrary.wiley.com/doi/*/pdf"],
+    "js": ["wiley.js"],
     "run_at": "document_end"
   }
   ]
